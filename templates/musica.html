@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SearchFy • Música</title>
+    
+    <link rel="stylesheet" href="/SearchFy/static/css/style-others.css"> 
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+
+    <main class="dashboard">
+        
+        <h1 class="brand">SearchFy</h1>
+
+        <div class="search-wrapper">
+            <input type="text" placeholder="Artistas, músicas, gêneros, playlists...">
+            <button>
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+        </div>
+        
+        <section class="grid">
+            <article class="card">
+                <h2>Playlists que contém a música</h2>
+                <div class="table-container">
+                    <table id="playlistMusicList">
+                        <thead>
+                            <tr>
+                                <th>Nome da Playlist</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            </tbody>
+                    </table>
+                </div>
+            </article>
+
+            <article class="card">
+                <h2>Álbum do qual a música pertence</h2>
+                <div class="table-container">
+                    <table id="albumInfo">
+                        <thead>
+                            <tr>
+                                <th>Nome do Álbum</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            </tbody>
+                    </table>
+                </div>
+            </article>
+        </section>
+
+    </main>
+
+</body>
+</html>

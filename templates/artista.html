@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+
+<head>
+    <meta charset="UTF-8">
+    <title>SearchFy • Artista</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/SearchFy/static/css/style-others.css">
+
+    <!-- Chart.js (para exibir os gráficos de verdade) -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <!-- Ícones (lupa)  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+    <main class="dashboard">
+        <!-- Cabeçalho -->
+        <h1 class="brand">SearchFy</h1>
+
+        <!-- Barra de busca -->
+        <div class="search-wrapper">
+            <input id="searchInput" type="text" placeholder="Artistas, músicas, gêneros, playlists...">
+            <button id="searchBtn">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+        </div>
+
+        <!-- Grid principal -->
+        <section class="grid">
+            <article class="card">
+                <h2>Músicas do Artista</h2>
+                <div class="table-container placeholder">
+                    <table id="dataList">
+                        <thead>
+                            <tr>
+                                <th>Música</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            </tbody>
+                    </table>
+                </div>
+            </article>
+
+            <article class="card">
+                <h2>Álbuns do artista</h2>
+                <div class="table-container placeholder">
+                    <table id="albumList">
+                        <thead>
+                            <tr>
+                                <th>Álbum</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            </tbody>
+                    </table>
+                </div>
+            </article>
+
+            <article class="card">
+                <h2>Quantidade de músicas por playlist</h2>
+                <div class="table-container placeholder">
+                    <table id="playlistCountList">
+                        <thead>
+                            <tr>
+                                <th>Playlist</th>
+                                <th>Nº de Músicas</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            </tbody>
+                    </table>
+                </div>
+            </article>
+
+            <article class="card">
+                <h2>Playlists em que o artista aparece</h2>
+                <div class="table-container placeholder">
+                    <table id="playlistAppearanceList">
+                        <thead>
+                            <tr>
+                                <th>Nome da Playlist</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            </tbody>
+                    </table>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <!-- JS -->
+    <script src="/SearchFy/static/js/script.js"></script>
+</body>
+
+</html>

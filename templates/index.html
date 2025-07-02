@@ -6,7 +6,7 @@
     <title>SearchFy • Tela inicial</title>
 
     <!-- CSS -->
-    <link rel="stylesheet" href="/SearchFy/static/css/style.css">
+    <link rel="stylesheet" href="/static/css/style.css">
 
     <!-- Chart.js (para exibir os gráficos de verdade) -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
@@ -33,28 +33,36 @@
             <!-- cards estruturais – o JS vai preencher quando tiver dados -->
             <article class="card">
                 <h2>Lista de artistas "acima da média"</h2>
-                <ul id="dataList" class="placeholder"></ul>
+                <ul id="listAboveAvg" class="placeholder"></ul>
             </article>
 
             <article class="card">
                 <h2>Gráfico de artistas mais populares</h2>
-                <canvas id="chartOne" class="placeholder"></canvas>
+                <canvas id="chartArtists" class="placeholder"></canvas>
             </article>
 
-            <article class="card circle">
+            <article class="card">
                 <h2>Gráfico de gêneros por playlists</h2>
-                <canvas id="chartTwo" class="placeholder"></canvas>
+                <canvas id="chartGenres" class="placeholder"></canvas>
             </article>
 
             <article class="card">
                 <h2>Tabela playlists e contagens de albúns</h2>
-                <table id="dataTable" class="placeholder"></table>
+                <table id="tblPlaylistAlbums" class="placeholder">
+                    <thead>
+                        <tr>
+                            <th>Playlist</th>
+                            <th>#Álbuns</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
             </article>
         </section>
     </main>
 
     <!-- JS -->
-    <script src="/SearchFy/static/js/script.js"></script>
+    <script src="/static/js/script.js"></script>
 </body>
 
 </html>
